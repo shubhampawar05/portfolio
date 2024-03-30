@@ -5,15 +5,17 @@ import Home from './Components/Home';
 import Skills from './Components/Skills';
 import AboutMe from './Components/AboutMe';
 import Contactus from './Components/Contactus';
+import Projects from './Components/Projects';
 
 function App() {
   return (
     <div className="App">
      <Header/>
      <Home/>
+     <Projects/>
      {/* <AboutMe/> */}
-     <Skills/>
-     <Contactus/>
+     {/* <Skills/> */}
+     {/* <Contactus/> */}
     </div>
   );
 }
