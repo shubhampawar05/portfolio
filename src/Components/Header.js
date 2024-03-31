@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { BsSun } from "react-icons/bs";
+import { BsSunFill } from "react-icons/bs";
 
 const Header = () => {
+  const [theme , setTheme] = useState(true);
+
   return (
     <div className="w-full">
       <div className="max-w-screen-xl mx-auto">
@@ -32,7 +36,7 @@ const Header = () => {
               <Link to="contactus"> <div className="px-3 py-2 hover:bg-orange-300 rounded-lg shadow-orange-500 outline-orange-700 font-semibold">
                Contact
               </div></Link>
-              <button className="">theme</button>
+              <button className="" onClick={()=>setTheme(!theme)}>{theme ? <BsSunFill/>: <BsSun/> }</button>
             </div>
           </div>
         </nav>

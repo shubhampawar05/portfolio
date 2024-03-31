@@ -7,11 +7,11 @@ import AboutMe from "./AboutMe";
 
 const Home = () => {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full shadow">
       <main className="max-w-screen-xl h-screen mx-auto">
         <div className=" w-full h-full flex justify-center align-center ">
           <div className="w-1/2 flex justify-center align-center ">
-            <div className="p-4 flex flex-col justify-center">
+            <div className="px-12 flex flex-col justify-center">
               <h1 className="text-6xl font-bold ">HELLO </h1>
               <p  className="max-w-[70%] text-3xl font-bold my-4">
                 I'm Shubham Chopde. <br /> Full Stack Developer, <br /> Web developer Enthusiast, Life Long Learner.
@@ -31,8 +31,8 @@ const Home = () => {
             <img src={a} alt="" />
           </div>
         </div>
-        <AboutMe/>
-        <Skills/>
+        {/* <AboutMe/>
+        <Skills/> */}
       </main>
     </div>
   );
