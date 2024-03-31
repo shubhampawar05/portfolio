@@ -2,6 +2,8 @@ import React from "react";
 import a from "./../Assets/a.png";
 import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
+import Skills from "./Skills";
+import AboutMe from "./AboutMe";
 
 const Home = () => {
   return (
@@ -29,6 +31,8 @@ const Home = () => {
             <img src={a} alt="" />
           </div>
         </div>
+        <AboutMe/>
+        <Skills/>
       </main>
     </div>
   );
