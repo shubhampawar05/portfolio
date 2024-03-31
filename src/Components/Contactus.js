@@ -8,9 +8,9 @@ import { TiSocialLinkedin } from "react-icons/ti";
 
 const Contactus = () => {
   return (
-    <div className='w-full bg-black'>
+    <div className='w-full dark:bg-black dark:text-white transition-all duration-1000'>
         <section className='max-w-screen-xl mx-auto'>
-            <div className='w-full h-screen py-12 flex text-white '>
+            <div className='w-full h-screen py-12 flex '>
                 <div className='w-1/3 flex flex-col justify-center'>
                     <h1 className=' text-5xl font-bold py-4'>Contact Me</h1>
                     <div className='flex items-center gap-2 p-2'><SiMinutemailer /> <p>Shubhamchopde090@gmail.com</p></div>

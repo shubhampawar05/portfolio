@@ -7,7 +7,7 @@ import AboutMe from "./AboutMe";
 
 const Home = () => {
   return (
-    <div className="w-full h-full shadow">
+    <div className="w-full dark:bg-black dark:text-white transition-all duration-1000 shadow">
       <main className="max-w-screen-xl h-screen mx-auto">
         <div className=" w-full h-full flex justify-center align-center ">
           <div className="w-1/2 flex justify-center align-center ">
@@ -28,7 +28,7 @@ const Home = () => {
             </div>
           </div>
           <div className="w-1/2 flex flex-col justify-center">
-            <img src={a} alt="" />
+            <img src={a} alt="" className="rounded-lg" />
           </div>
         </div>
         {/* <AboutMe/>
