@@ -6,6 +6,7 @@ import Projects from "./Components/Projects";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LayoutPage from "./Components/LayoutPage";
 import MainScreen from "./Components/MainScreen";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
@@ -13,15 +14,18 @@ function App() {
      
 
       <Routes>
+        
         <Route path="/" element={<LayoutPage/>}>
           <Route path="/" element={<MainScreen/>}/>
        
           <Route path="/project" element={<Projects />} />
           <Route path="aboutme" element={<AboutMe />} />
           <Route path="/contactus" element={<Contactus />} />
-         
         </Route>
+
       </Routes>
+      <ScrollToTop/>
+
     </BrowserRouter>
   );
 }

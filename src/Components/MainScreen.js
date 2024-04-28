@@ -7,7 +7,7 @@ const MainScreen = () => {
   return (
     <div>
         <Home/>
-        <AboutMe/>
+     
         <Skills/>
     </div>
   )

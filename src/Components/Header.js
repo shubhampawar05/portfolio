@@ -2,8 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { BsSun } from "react-icons/bs";
 import { BsSunFill } from "react-icons/bs";
+import { useLocation } from 'react-router-dom'
 
 const Header = () => {
+  const {pathname} = useLocation();
+
+
+
   const [themeMode, setThemeMode] = useState("light");
   const onChangeBtn = (e) => {
     const darkModeStatus = e.currentTarget.checked;
@@ -25,30 +30,30 @@ const Header = () => {
         <nav className=" py-4 px-2  ">
           <div className="flex justify-between align-middle w-full">
             <div className="w-30%">
-              <span className="text-2xl  font-semibold">Shubham Chopde</span>
+              <span className={`text-2xl  font-semibold ${pathname==='/'? '  text-green-500': ''}`}><Link to={'./'}>Shubham Chopde</Link></span>
             </div>
             <div className="flex justify-evenly align-middle w-[60%] text-xl">
               <Link to="/">
                 {" "}
-                <div className="px-3 py-2 hover:bg-orange-300 rounded-lg shadow-orange-500 outline-orange-700 font-semibold">
+                <div className={`px-3 py-2 hover:bg-orange-300 rounded-lg shadow-orange-500 outline-orange-700 font-semibold ${pathname==='/'? 'border-b-2 border-red-500  text-red-500': ''}`}>
                   {" "}
                   Home
                 </div>{" "}
               </Link>
               <Link to="/aboutme">
-                <div className="px-3 py-2 hover:bg-orange-300 rounded-lg shadow-orange-500 outline-orange-700 font-semibold">
+                <div className={`px-3 py-2 hover:bg-orange-300 rounded-lg shadow-orange-500 outline-orange-700 font-semibold  ${pathname==='/aboutme'? 'border-b-2 border-red-500  text-red-500': ''}`}>
                   About me{" "}
                 </div>
               </Link>
               <Link to="/project">
-                <div className="px-3 py-2 hover:bg-orange-300 rounded-lg shadow-orange-500 outline-orange-700 font-semibold">
+                <div className={`px-3 py-2 hover:bg-orange-300 rounded-lg shadow-orange-500 outline-orange-700 font-semibold  ${pathname==='/project'? 'border-b-2 border-red-500  text-red-500': ''}`}>
                   {" "}
                   Projects
                 </div>
               </Link>
-              <Link to="contactus">
+              <Link to="/contactus">
                 {" "}
-                <div className="px-3 py-2 hover:bg-orange-300 rounded-lg shadow-orange-500 outline-orange-700 font-semibold">
+                <div className={`px-3 py-2 hover:bg-orange-300 rounded-lg shadow-orange-500 outline-orange-700 font-semibold  ${pathname==='/contactus'? 'border-b-2 border-red-500  text-red-500': ''}`}>
                   Contact
                 </div>
               </Link>

@@ -81,33 +81,16 @@ const Skills = () => {
             </div>
 
             <div className="px-8 py-2 rounded-xl border-2 flex hover:shadow-2xl bg-white shadow-lg items-center">
-              <p className="text-xl font-semibold mr-2">NODEJS</p>{" "}
+              <p className="text-xl font-semibold mr-2">JAVA</p>{" "}
               <img
                 width={"35px"}
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaaBo9QxrAvjTG0ICXhRnK-6zVK0P0fSu_67KDERrzGARlaytChXBvpJo616qYLdZP_KI&usqp=CAU"
-                alt=""
-              />
-            </div>
-
-            <div className="px-8 py-2 rounded-xl border-2 flex hover:shadow-2xl bg-white shadow-lg items-center">
-              <p className="text-xl font-semibold mr-2">MONGODB</p>{" "}
-              <img
-                width={"35px"}
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaaBo9QxrAvjTG0ICXhRnK-6zVK0P0fSu_67KDERrzGARlaytChXBvpJo616qYLdZP_KI&usqp=CAU"
+                src="https://w7.pngwing.com/pngs/578/816/png-transparent-java-class-file-java-platform-standard-edition-java-development-kit-java-runtime-environment-coffee-jar-text-class-orange-thumbnail.png"
                 alt=""
               />
             </div>
 
             
-            <div className="px-8 py-2 rounded-xl border-2 flex hover:shadow-2xl bg-white shadow-lg items-center">
-              <p className="text-xl font-semibold mr-2">EXPRESS</p>{" "}
-              <img
-                width={"35px"}
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaaBo9QxrAvjTG0ICXhRnK-6zVK0P0fSu_67KDERrzGARlaytChXBvpJo616qYLdZP_KI&usqp=CAU"
-                alt=""
-              />
-            </div>
-
+            
           </div>
         </div>
       </div>
